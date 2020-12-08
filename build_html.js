@@ -1,6 +1,10 @@
 let fs = require('fs-extra')
 let path = require('path')
-let md = require('markdown-it')({ typographer: true, html: true })
+let md = require('markdown-it')({
+  typographer: true,
+  html: true,
+  linkify: true,
+})
 var implicitFigures = require('markdown-it-implicit-figures')
 
 let deploy_location = process.argv[2]
@@ -172,6 +176,11 @@ th {
 table ul, table ol {
   list-style-position: inside;
   padding-left: 0;
+}
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
 }
 `
 
