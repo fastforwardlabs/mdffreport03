@@ -3,13 +3,13 @@
       <head>
 <meta charset="utf-8" />
 
-<title>Structural Time Series</title>
-<meta name="description" content="An online research report on structural time series by Cloudera Fast Forward." />
+<title>Deep Learning: Image Analysis Classic</title>
+<meta name="description" content="An online research report on deep learning for image analysis by Cloudera Fast Forward." />
 
-<meta property="og:title" content="Structural Time Series" /> 
-<meta property="og:description" content="An online research report on structural time series by Cloudera Fast Forward." />
-<meta property="og:image" content="https://structural-time-series.fastforwardlabs.com/figures/ff16-cover-splash.png" />
-<meta property="og:url" content="https://structural-time-series.fastforwardlabs.com" />
+<meta property="og:title" content="Deep Learning: Image Analysis Classic" /> 
+<meta property="og:description" content="An online research report on deep learning for image analysis by Cloudera Fast Forward." />
+<meta property="og:image" content="https://deep-learning-image-classic.fastforwardlabs.com/figures/ff03-cover-splash.png" />
+<meta property="og:url" content="https://deep-learning-image-classic.fastforwardlabs.com" />
 <meta name="twitter:card" content="summary_large_image" />
 
 <meta name="viewport" content="width=device-width" />
@@ -553,14 +553,14 @@ h2 {
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-157475426-9', 'auto');
+  ga('create', 'UA-157475426-10', 'auto');
   ga('send', 'pageview');
 
   window.addEventListener('load', function() {
     document.getElementById('report-pdf-download').addEventListener('click', function() {
       ga('send', {
         hitType: 'pageview',
-        page: '//FF16-Structural_Time_Series-Cloudera_Fast_Forward.pdf'
+        page: '//FF03-Deep_Learning_Image_Analysis-Cloudera_Fast_Forward.pdf'
       });
     });
   })
@@ -579,12 +579,8 @@ h2 {
           <h1 id="deep-learning%3A-image-analysis">Deep Learning: Image Analysis</h1>
 <p>FF03 · <em>September 2015</em></p>
 <figure><img src="figures/ff03-01.png" alt="Deep Learning for Image Analysis report cover"><figcaption>Deep Learning for Image Analysis report cover</figcaption></figure>
-<p>TODO change</p>
-<p><em>This is an applied research report by <a href="https://www.cloudera.com/products/fast-forward-labs-research.html">Cloudera Fast Forward</a>.
-We write reports about emerging technologies.
-Accompanying each report are working prototypes or code that exhibits the capabilities of the algorithm and offer detailed technical advice on its practical application.
-Read our full report on deep learning for image analysis below.</em></p>
-<p>You can view and download <a href="https://github.com/fastforwardlabs/imageanalysis_cml">the code</a> for the accompanying prototype, <a href="https://convnetplayground.fastforwardlabs.com/#/">ConvNet Playground</a>.</p>
+<p><em>This is an applied research report by <a href="https://www.cloudera.com/products/fast-forward-labs-research.html">Cloudera Fast Forward</a>. Originally published in 2015, it features a lot of continually relevant information on how neural networks can be used to interpret images. If you would like more current information on the state of the industry, be sure to check out our <a href="https://deep-learning-image-analysis.fastforwardlabs.com">updated report on image analysis</a>.</em></p>
+<p><em>Read the full report below or <a href="/FF03-Deep_Learning_Image_Analysis-Cloudera_Fast_Forward.pdf" target="_blank" id="report-pdf-download">download the PDF</a>.</em></p>
 <p><div class="table-of-contents"><div id="toc-header" style="display: flex; font-weight: bold; text-transform: uppercase;">
      <div><button id="toggle_contents" style="padding-left: 0.5ch; padding-right: 0.5ch; cursor: pointer; position: relative; top: -1px;">☰</button><span id="contents-label" style="margin-left: 0;"> Contents</span></div>
   </div><ul><li><a href="#introduction">Introduction</a></li><li><a href="#neural-networks">Neural Networks</a><ul><li><a href="#the-perceptron">The Perceptron</a></li><li><a href="#convolutional-neural-networks%3A-feed-forward-nets-for-images">Convolutional Neural Networks: Feed-Forward Nets for Images</a></li><li><a href="#what-is-deep%3F">What Is Deep?</a></li></ul></li><li><a href="#what-neural-networks-are-and-are-not">What Neural Networks Are and Are Not</a><ul><li><a href="#interpreting-a-neural-network">Interpreting a Neural Network</a></li><li><a href="#limitations">Limitations</a></li><li><a href="#common-misconceptions">Common Misconceptions</a></li></ul></li><li><a href="#are-neural-networks-right-for-you%3F">Are Neural Networks Right for You?</a><ul><li><a href="#picking-a-good-model">Picking a Good Model</a></li><li><a href="#datasets-and-training">Datasets and Training</a></li><li><a href="#testing-what-you've-made">Testing What You've Made</a></li><li><a href="#timelines">Timelines</a></li><li><a href="#deploying">Deploying</a></li><li><a href="#hardware">Hardware</a></li></ul></li><li><a href="#deep-learning-in-industry-today">Deep Learning in Industry Today</a><ul><li><a href="#commercial-uses-of-deep-learning">Commercial Uses of Deep Learning</a></li><li><a href="#neural-network-patents">Neural Network Patents</a></li><li><a href="#open-source-neural-network-tools">Open Source Neural Network Tools</a></li></ul></li><li><a href="#prototypes%3A-pictograph-and-fathom">Prototypes: Pictograph and Fathom</a><ul><li><a href="#pictograph-and-fathom">Pictograph and Fathom</a></li><li><a href="#design-and-deep-learning">Design and Deep Learning</a></li><li><a href="#failed-prototypes">Failed Prototypes</a></li></ul></li><li><a href="#ethics-of-deep-learning">Ethics of Deep Learning</a><ul><li><a href="#uninterpretability">Uninterpretability</a></li><li><a href="#edge-cases%3A-liability-and-error">Edge Cases: Liability and Error</a></li></ul></li><li><a href="#the-future">The Future</a><ul><li><a href="#future-of-academic-research">Future of Academic Research</a></li><li><a href="#2030%3A-the-world-deep-learning-built">2030: The World Deep Learning Built</a></li></ul></li><li><a href="#conclusion">Conclusion</a></li></ul></div></p>

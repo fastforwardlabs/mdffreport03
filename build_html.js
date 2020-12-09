@@ -580,9 +580,9 @@ function makeJS() {
 }
 
 function makeHead() {
-  let title = 'Structural Time Series'
+  let title = 'Deep Learning: Image Analysis Classic'
   let description =
-    'An online research report on structural time series by Cloudera Fast Forward.'
+    'An online research report on deep learning for image analysis by Cloudera Fast Forward.'
   return `<head>
 <meta charset="utf-8" />
 
@@ -591,8 +591,8 @@ function makeHead() {
 
 <meta property="og:title" content="${title}" /> 
 <meta property="og:description" content="${description}" />
-<meta property="og:image" content="https://structural-time-series.fastforwardlabs.com/figures/ff16-cover-splash.png" />
-<meta property="og:url" content="https://structural-time-series.fastforwardlabs.com" />
+<meta property="og:image" content="https://deep-learning-image-classic.fastforwardlabs.com/figures/ff03-cover-splash.png" />
+<meta property="og:url" content="https://deep-learning-image-classic.fastforwardlabs.com" />
 <meta name="twitter:card" content="summary_large_image" />
 
 <meta name="viewport" content="width=device-width" />
@@ -608,14 +608,14 @@ ${makeJS()}
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-157475426-9', 'auto');
+  ga('create', 'UA-157475426-10', 'auto');
   ga('send', 'pageview');
 
   window.addEventListener('load', function() {
     document.getElementById('report-pdf-download').addEventListener('click', function() {
       ga('send', {
         hitType: 'pageview',
-        page: '//FF16-Structural_Time_Series-Cloudera_Fast_Forward.pdf'
+        page: '//FF03-Deep_Learning_Image_Analysis-Cloudera_Fast_Forward.pdf'
       });
     });
   })
@@ -647,7 +647,7 @@ function wrap(content) {
 let filenames = fs.readdirSync(path.join(__dirname, 'src'))
 // let filenames = ['00-frontmatter.md', '03-prototype.md'];
 //
-filenames = filenames.filter(function(file) {
+filenames = filenames.filter(function (file) {
   return path.extname(file).toLowerCase() === '.md'
 })
 console.log(filenames)

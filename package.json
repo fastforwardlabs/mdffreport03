@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node build_html.js",
+    "nodemon": "nodemon -w src -w build_html.js -e md,js -V build_html.js",
     "dev": "nodemon -w src -w build_html.js -e md,js -V build_html.js & live-server out -d out -verbose --port 3000",
     "deploy": "node build_html.js && git-directory-deploy --directory out --branch gh-pages"
   },
@@ -12,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "debug": "^2.6.9",
     "fs-extra": "^8.1.0",
     "git-directory-deploy": "^1.5.1",
     "live-server": "^1.2.1",
