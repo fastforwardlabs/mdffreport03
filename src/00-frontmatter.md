@@ -1,6 +1,6 @@
 # Deep Learning: Image Analysis
 
-FF03 &middot; _September 2015_
+FF03 &middot; ©2015 Cloudera, Inc. All rights reserved
 
 ![Deep Learning for Image Analysis report cover](figures/ff03-01.png)
 
